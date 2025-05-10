@@ -32,13 +32,16 @@ nav a {
   border: 1px solid white;
   border-radius: 10px;
   padding: 5px;
-
 }
 
 .project img {
   width: 65%;
   border-radius: 10px;
   margin-bottom: 1rem;
+}
+
+.project a {
+  color: #5991ff
 }
 
 #projects {
@@ -53,4 +56,16 @@ footer {
 
 #linkedin {
   color:#C06C84;
+}
+
+@media(max-width: 768px){ /* three columns for tablets*/
+  .projects-grid {
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+@media(max-width: 480px){ /* two columns for mobile devices */
+  .projects-grid {
+    grid-template-columns: repeat(2,1fr);
+  }
 }
